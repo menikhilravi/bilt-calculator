@@ -111,6 +111,12 @@
     .bc-note.good{background:rgba(47,133,90,.1);color:var(--opt2)}
     .bc-note.warn{background:var(--warn-bg);color:var(--warn)}
 
+    /* ── PA MAXED CHECKBOX ROW ── */
+    .pa-maxed-row{display:none;align-items:center;gap:10px;margin-bottom:14px;padding:10px 14px;background:#fffff0;border:1.5px solid #d69e2e;border-radius:8px}
+    .pa-maxed-row label{font-size:13px;font-weight:600;color:#744210;cursor:pointer;display:flex;align-items:center;gap:8px;user-select:none}
+    .pa-maxed-row input[type=checkbox]{width:16px;height:16px;cursor:pointer;accent-color:#d69e2e;flex-shrink:0}
+    .pa-maxed-row .pa-maxed-hint{font-size:11px;color:var(--text3)}
+
     /* ── POINT ACCELERATOR BOX ── */
     .pa-box{background:linear-gradient(135deg,rgba(47,133,90,.1),rgba(47,133,90,.05));border:1.5px solid rgba(47,133,90,.45);border-radius:8px;padding:12px 14px;margin-top:10px}
     .pa-hd{font-weight:700;color:var(--opt2);font-size:13px;margin-bottom:4px}
@@ -272,6 +278,15 @@
     <div class="spend-summary">
       <span>Total spend: <strong id="spend-total">$1,500</strong></span>
       <span>Spend/Rent ratio: <strong id="spend-ratio">75%</strong></span>
+    </div>
+
+    <!-- PA maxed checkbox: shown for Obsidian / Palladium only -->
+    <div class="pa-maxed-row" id="pa-maxed-row">
+      <label>
+        <input type="checkbox" id="chk-pa-maxed" />
+        Already used Point Accelerator 5× this year
+      </label>
+      <span class="pa-maxed-hint">PA bonus excluded from Option 2 when checked</span>
     </div>
 
     <button class="assump-btn" onclick="toggleAssump()"><span id="arr">▶</span> Show rate assumptions &amp; sources</button>
@@ -500,6 +515,7 @@ let S = {
   travel: v('inp-travel') || 200,
   other:  v('inp-other')  || 700,
   simple: v('inp-simple') || 1500,
+  paMaxed: false,
 };
 
 // ═══════════════════════════════════════════════════════════
@@ -538,6 +554,7 @@ function selectCard(c) {
   document.getElementById('faq-obsidian-2').style.display = c==='obsidian' ? '' : 'none';
   document.getElementById('faq-palladium').style.display   = c==='palladium' ? '' : 'none';
   document.getElementById('faq-pa').style.display          = (c==='obsidian'||c==='palladium') ? '' : 'none';
+  document.getElementById('pa-maxed-row').style.display    = (c==='obsidian'||c==='palladium') ? 'flex' : 'none';
 
   updateCardLabels();
   render();
@@ -622,8 +639,8 @@ function calcOpt2(s) {
   const bcUsed        = rentPts * BC_TO_PTS_COST;
   const leftoverBC    = Math.max(0, biltCash - bcUsed);
   // Point Accelerator: $200 BC per activation, +1× on up to $5k spend = 5,000 pts max
-  // Only for Obsidian & Palladium (not Blue)
-  const paEligible         = s.card !== 'blue';
+  // Only for Obsidian & Palladium (not Blue), and only if user hasn't already used all 5 this year
+  const paEligible         = s.card !== 'blue' && !s.paMaxed;
   const paActivations      = paEligible ? Math.min(Math.floor(leftoverBC / 200), 5) : 0;
   const paBonusPtsMax      = paActivations * 5000;
   // Amortized PA value: leftoverBC accumulates monthly → 1 activation per (200/leftoverBC) months
@@ -828,6 +845,7 @@ bind('inp-cat1',   'cat1');
 bind('inp-travel', 'travel');
 bind('inp-other',  'other');
 bind('inp-simple', 'simple');
+document.getElementById('chk-pa-maxed').addEventListener('change', e => { S.paMaxed = e.target.checked; render(); });
 
 function showSummary() {
   const s  = S;
