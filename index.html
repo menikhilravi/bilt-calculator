@@ -33,161 +33,109 @@
     body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;font-size:15px}
     a{color:var(--primary)}
 
-    .wrap{max-width:980px;margin:0 auto;padding:0 20px}
-    .sec{padding:28px 0}
+    .wrap{max-width:860px;margin:0 auto;padding:0 15px}
+    .sec{padding:18px 0}
 
     /* ── HEADER ── */
-    .hdr{background:linear-gradient(135deg,#5a67d8,#434190);color:#fff;padding:44px 20px 32px;text-align:center}
-    .hdr .pill{display:inline-block;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);border-radius:20px;padding:3px 14px;font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-bottom:14px}
-    .hdr h1{font-size:clamp(1.5rem,5vw,2.6rem);font-weight:800;letter-spacing:-.02em;margin-bottom:8px}
-    .hdr p{opacity:.85;max-width:540px;margin:0 auto;font-size:clamp(.9rem,2vw,1.1rem)}
-
-    /* ── NOTICE ── */
-    .notice{background:var(--warn-bg);border-left:4px solid var(--warn-border);border-radius:0 8px 8px 0;padding:11px 16px;font-size:13px;color:var(--text2);margin:18px 0}
-    .notice strong{color:var(--warn)}
+    .hdr{background:linear-gradient(135deg,#5a67d8,#434190);color:#fff;padding:16px 15px 12px;text-align:center}
+    .hdr .pill{display:inline-block;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);border-radius:20px;padding:2px 10px;font-size:10px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-bottom:4px}
+    .hdr h1{font-size:clamp(1rem,3.5vw,1.6rem);font-weight:800;letter-spacing:-.02em;margin-bottom:0}
 
     /* ── CARD ── */
-    .card{background:var(--surface);border-radius:var(--r);box-shadow:var(--sh);padding:26px}
+    .card{background:var(--surface);border-radius:var(--r);box-shadow:var(--sh);padding:18px}
 
     /* ── CARD SELECTOR ── */
-    .card-sel-wrap{margin-bottom:20px}
-    .card-sel-label{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text3);margin-bottom:10px}
-    .card-btns{display:flex;gap:10px;flex-wrap:wrap}
-    .card-btn{flex:1;min-width:140px;padding:14px 12px;border:2px solid var(--border);border-radius:10px;background:var(--surface2);cursor:pointer;text-align:center;font-weight:700;font-size:15px;color:var(--text2);transition:all .18s;line-height:1.3}
-    .card-btn .fee{display:block;font-size:11px;font-weight:400;color:var(--text3);margin-top:3px}
+    .card-sel-wrap{margin-bottom:12px}
+    .card-sel-label{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text3);margin-bottom:6px}
+    .card-btns{display:flex;gap:8px;flex-wrap:wrap}
+    .card-btn{flex:1;min-width:130px;padding:10px 8px;border:2px solid var(--border);border-radius:10px;background:var(--surface2);cursor:pointer;text-align:center;font-weight:700;font-size:14px;color:var(--text2);transition:all .18s;line-height:1.2}
+    .card-btn .fee{display:block;font-size:10px;font-weight:400;color:var(--text3);margin-top:2px}
     .card-btn:hover{border-color:var(--primary);color:var(--primary)}
     .card-btn.active{border-color:var(--primary);background:var(--opt1-bg);color:var(--primary)}
 
     /* ── OBSIDIAN BONUS CAT ── */
-    .bonus-cat-row{display:none;align-items:center;gap:10px;margin-bottom:18px;padding:10px 14px;background:var(--surface2);border-radius:8px;flex-wrap:wrap}
-    .bonus-cat-row label{font-size:13px;font-weight:600;white-space:nowrap}
-    .toggle-btns{display:flex;gap:6px}
-    .t-btn{padding:5px 14px;border:1.5px solid var(--border);border-radius:20px;background:#fff;cursor:pointer;font-size:13px;font-weight:600;color:var(--text2);transition:all .15s}
+    .bonus-cat-row{display:none;align-items:center;gap:8px;margin-bottom:12px;padding:8px 12px;background:var(--surface2);border-radius:8px;flex-wrap:wrap}
+    .bonus-cat-row label{font-size:12px;font-weight:600;white-space:nowrap}
+    .toggle-btns{display:flex;gap:4px}
+    .t-btn{padding:4px 12px;border:1.5px solid var(--border);border-radius:20px;background:#fff;cursor:pointer;font-size:12px;font-weight:600;color:var(--text2);transition:all .15s}
     .t-btn.active{background:var(--primary);border-color:var(--primary);color:#fff}
 
     /* ── INPUTS ── */
-    .inputs-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:14px}
-    .field{display:flex;flex-direction:column;gap:4px}
-    .lbl{font-size:13px;font-weight:600;color:var(--text2);display:flex;align-items:center;gap:6px}
-    .rate-badge{background:var(--primary);color:#fff;font-size:11px;font-weight:700;border-radius:4px;padding:1px 6px}
+    .inputs-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:10px}
+    .field{display:flex;flex-direction:column;gap:3px}
+    .lbl{font-size:12px;font-weight:600;color:var(--text2);display:flex;align-items:center;gap:6px}
+    .rate-badge{background:var(--primary);color:#fff;font-size:10px;font-weight:700;border-radius:4px;padding:1px 5px}
     .inp-wrap{display:flex;align-items:center;border:1.5px solid var(--border);border-radius:8px;overflow:hidden;background:#fff}
     .inp-wrap:focus-within{border-color:var(--primary);box-shadow:0 0 0 3px rgba(90,103,216,.15)}
-    .pfx{padding:0 10px;color:var(--text3);font-weight:600;background:var(--surface2);align-self:stretch;display:flex;align-items:center;border-right:1px solid var(--border)}
-    input[type=number]{border:none;outline:none;padding:10px 12px;font-size:15px;width:100%;background:transparent}
+    .pfx{padding:0 8px;color:var(--text3);font-weight:600;background:var(--surface2);align-self:stretch;display:flex;align-items:center;border-right:1px solid var(--border)}
+    input[type=number]{border:none;outline:none;padding:8px 10px;font-size:14px;width:100%;background:transparent}
     input[type=number]::-webkit-inner-spin-button{opacity:.4}
-    .hint{font-size:11px;color:var(--text3)}
+    .hint{font-size:10px;color:var(--text3)}
 
     /* single spend field for Blue/Palladium */
-    .simple-spend{margin-bottom:14px}
+    .simple-spend{margin-bottom:10px}
 
-    .spend-summary{display:flex;gap:20px;font-size:13px;color:var(--text2);margin-bottom:18px;flex-wrap:wrap}
+    .spend-summary{display:flex;gap:15px;font-size:12px;color:var(--text2);margin-bottom:12px;flex-wrap:wrap}
     .spend-summary strong{color:var(--text)}
 
-    /* ── ASSUMPTIONS ── */
-    .assump-btn{background:none;border:none;font-size:13px;color:var(--primary);cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:6px;font-weight:600}
-    .assump-body{display:none;margin-top:12px;overflow-x:auto}
-    .assump-body.open{display:block}
-    .assump-body table{width:100%;border-collapse:collapse;font-size:12px}
-    .assump-body th{background:var(--surface2);padding:7px 10px;text-align:left;font-weight:600;border-bottom:2px solid var(--border)}
-    .assump-body td{padding:6px 10px;border-bottom:1px solid var(--border);vertical-align:top}
-
     /* ── RESULTS GRID ── */
-    .results-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:24px 0}
-    .res-card{border-radius:var(--r);padding:22px;border:2px solid var(--border);transition:box-shadow .2s}
+    .results-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+    .res-card{border-radius:var(--r);padding:16px;border:2px solid var(--border);transition:box-shadow .2s}
     .res-card.opt1{border-color:var(--opt1);background:var(--opt1-bg)}
     .res-card.opt2{border-color:var(--opt2);background:var(--opt2-bg)}
     .res-card.winner{box-shadow:var(--sh-md)}
-    .res-hdr{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px}
-    .res-name{font-weight:800;font-size:16px}
-    .res-sub{font-size:12px;color:var(--text3);margin-top:2px}
-    .pts-num{font-size:clamp(2rem,6vw,3.2rem);font-weight:800;line-height:1;letter-spacing:-.03em}
-    .pts-lbl{font-size:12px;color:var(--text2);margin-top:4px;margin-bottom:14px;font-weight:600}
-    .brk{list-style:none;font-size:13px;display:flex;flex-direction:column;gap:5px}
-    .brk li{display:flex;justify-content:space-between;gap:8px;padding:4px 0;border-bottom:1px solid rgba(0,0,0,.05)}
+    .res-hdr{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px}
+    .res-name{font-weight:800;font-size:14px}
+    .res-sub{font-size:11px;color:var(--text3);margin-top:1px}
+    .pts-num{font-size:clamp(1.5rem,5vw,2.4rem);font-weight:800;line-height:1;letter-spacing:-.03em}
+    .pts-lbl{font-size:11px;color:var(--text2);margin-top:2px;margin-bottom:10px;font-weight:600}
+    .brk{list-style:none;font-size:12px;display:flex;flex-direction:column;gap:3px}
+    .brk li{display:flex;justify-content:space-between;gap:6px;padding:3px 0;border-bottom:1px solid rgba(0,0,0,.05)}
     .brk .bl{color:var(--text2);flex:1}
     .brk .bv{font-weight:700;white-space:nowrap}
-    .bc-note{font-size:12px;margin-top:10px;padding:7px 10px;border-radius:6px}
+    .bc-note{font-size:11px;margin-top:8px;padding:6px 8px;border-radius:6px}
     .bc-note.info{background:rgba(90,103,216,.1);color:var(--primary)}
     .bc-note.good{background:rgba(47,133,90,.1);color:var(--opt2)}
     .bc-note.warn{background:var(--warn-bg);color:var(--warn)}
 
     /* ── PA MAXED CHECKBOX ROW ── */
-    .pa-maxed-row{display:none;align-items:center;gap:10px;margin-bottom:14px;padding:10px 14px;background:#fffff0;border:1.5px solid #d69e2e;border-radius:8px}
-    .pa-maxed-row label{font-size:13px;font-weight:600;color:#744210;cursor:pointer;display:flex;align-items:center;gap:8px;user-select:none}
-    .pa-maxed-row input[type=checkbox]{width:16px;height:16px;cursor:pointer;accent-color:#d69e2e;flex-shrink:0}
-    .pa-maxed-row .pa-maxed-hint{font-size:11px;color:var(--text3)}
+    .pa-maxed-row{display:none;align-items:center;gap:8px;margin-bottom:10px;padding:8px 12px;background:#fffff0;border:1.5px solid #d69e2e;border-radius:8px}
+    .pa-maxed-row label{font-size:12px;font-weight:600;color:#744210;cursor:pointer;display:flex;align-items:center;gap:8px;user-select:none}
+    .pa-maxed-row input[type=checkbox]{width:14px;height:14px;cursor:pointer;accent-color:#d69e2e;flex-shrink:0}
+    .pa-maxed-row .pa-maxed-hint{font-size:10px;color:var(--text3)}
 
     /* ── POINT ACCELERATOR BOX ── */
-    .pa-box{background:linear-gradient(135deg,rgba(47,133,90,.1),rgba(47,133,90,.05));border:1.5px solid rgba(47,133,90,.45);border-radius:8px;padding:12px 14px;margin-top:10px}
-    .pa-hd{font-weight:700;color:var(--opt2);font-size:13px;margin-bottom:4px}
-    .pa-detail{font-size:12px;color:var(--text2);line-height:1.55}
-    .win-badge{background:#f6e05e;color:#744210;font-size:11px;font-weight:700;padding:2px 8px;border-radius:12px;white-space:nowrap}
-    .tie-badge{background:#e2e8f0;color:var(--text2);font-size:11px;font-weight:700;padding:2px 8px;border-radius:12px}
+    .pa-box{background:linear-gradient(135deg,rgba(47,133,90,.1),rgba(47,133,90,.05));border:1.5px solid rgba(47,133,90,.45);border-radius:8px;padding:8px 12px;margin-top:8px}
+    .pa-hd{font-weight:700;color:var(--opt2);font-size:12px;margin-bottom:2px}
+    .pa-detail{font-size:11px;color:var(--text2);line-height:1.45}
+    .win-badge{background:#f6e05e;color:#744210;font-size:10px;font-weight:700;padding:1px 6px;border-radius:12px;white-space:nowrap}
+    .tie-badge{background:#e2e8f0;color:var(--text2);font-size:10px;font-weight:700;padding:1px 6px;border-radius:12px}
 
     /* ── TIER BAR ── */
-    .tier-sec{margin-top:14px;padding-top:14px;border-top:1px solid rgba(0,0,0,.08)}
-    .tier-sec-lbl{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text3);margin-bottom:8px}
-    .tier-bar-track{position:relative;height:8px;background:#e2e8f0;border-radius:4px;margin-bottom:4px}
+    .tier-sec{margin-top:10px;padding-top:10px;border-top:1px solid rgba(0,0,0,.08)}
+    .tier-sec-lbl{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text3);margin-bottom:6px}
+    .tier-bar-track{position:relative;height:6px;background:#e2e8f0;border-radius:4px;margin-bottom:4px}
     .tier-bar-fill{height:100%;border-radius:4px;background:linear-gradient(to right,#a3bffa,var(--opt1));transition:width .35s}
-    .tier-thumb{position:absolute;top:50%;transform:translate(-50%,-50%);width:14px;height:14px;border-radius:50%;background:var(--opt1);border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.25);transition:left .35s}
-    .tier-ticks{display:flex;justify-content:space-between;font-size:10px;color:var(--text3)}
-    .tier-status{display:flex;justify-content:space-between;margin-top:6px;font-size:12px}
+    .tier-thumb{position:absolute;top:50%;transform:translate(-50%,-50%);width:12px;height:12px;border-radius:50%;background:var(--opt1);border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.25);transition:left .35s}
+    .tier-ticks{display:flex;justify-content:space-between;font-size:9px;color:var(--text3)}
+    .tier-status{display:flex;justify-content:space-between;margin-top:4px;font-size:11px}
     .tier-cur{font-weight:700;color:var(--opt1)}
     .tier-nxt{color:var(--text3);font-style:italic}
 
-    /* ── RECOMMENDATION ── */
-    .rec{display:flex;align-items:flex-start;gap:14px;padding:20px;border-radius:var(--r);margin:0 0 20px;border:2px solid var(--border);background:var(--surface)}
-    .rec.r1{border-color:var(--opt1);background:var(--opt1-bg)}
-    .rec.r2{border-color:var(--opt2);background:var(--opt2-bg)}
-    .rec.rt{border-color:#d69e2e;background:#fffff0}
-    .rec-ico{font-size:2rem;line-height:1;flex-shrink:0}
-    .rec-body h3{font-size:1.1rem;margin-bottom:4px}
-    .rec-delta{display:inline-block;margin-top:8px;font-size:12px;font-weight:700;padding:2px 10px;border-radius:12px;background:rgba(0,0,0,.07)}
-
-    /* ── COMPARISON BAR ── */
-    .cmp-wrap{background:var(--surface);border-radius:var(--r);box-shadow:var(--sh);padding:20px;margin-bottom:20px}
-    .cmp-title{font-size:13px;font-weight:700;margin-bottom:10px;color:var(--text2)}
-    .vs-bar{display:flex;height:36px;border-radius:8px;overflow:hidden;gap:2px;margin-bottom:8px}
-    .vs1{background:var(--opt1);display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;font-weight:700;transition:flex .4s;min-width:0}
-    .vs2{background:var(--opt2);display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;font-weight:700;transition:flex .4s;min-width:0}
-    .cmp-lbls{display:flex;justify-content:space-between;font-size:13px}
-    .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px;vertical-align:middle}
-
-
-    /* ── INSIGHT BOX ── */
-    .insight-box{background:var(--surface2);border-radius:var(--r);border:1px solid var(--border);padding:20px;margin-bottom:20px}
-    .insight-box h3{font-size:15px;margin-bottom:10px}
-    .insight-box p{font-size:13px;color:var(--text2);line-height:1.65}
-    .breakeven{font-weight:700;color:var(--warn)}
-
-    /* ── EDGE CASES / FAQ ── */
-    .faq-sec{margin-top:8px}
-    .faq-sec h2{font-size:1.25rem;font-weight:800;margin-bottom:16px}
-    .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-    .faq-item{background:var(--surface);border-radius:var(--r);padding:18px;border-left:4px solid var(--border);box-shadow:var(--sh)}
-    .faq-item.ok{border-color:var(--opt2)}
-    .faq-item.warn{border-color:var(--warn-border)}
-    .faq-item h4{font-size:13px;font-weight:700;margin-bottom:6px}
-    .faq-item p{font-size:12px;color:var(--text2);line-height:1.55}
-
     /* ── SUMMARIZE ── */
-    .summarize-btn{background:var(--primary);color:#fff;border:none;border-radius:24px;padding:11px 26px;font-size:14px;font-weight:700;cursor:pointer;box-shadow:var(--sh);transition:background .15s,transform .1s}
+    .summarize-btn{background:var(--primary);color:#fff;border:none;border-radius:24px;padding:8px 20px;font-size:13px;font-weight:700;cursor:pointer;box-shadow:var(--sh);transition:background .15s,transform .1s}
     .summarize-btn:hover{background:var(--primary-dk);transform:translateY(-1px)}
     .summarize-btn:active{transform:translateY(0)}
-    .summary-box{position:relative;background:#fff;border:2px solid var(--primary);border-radius:var(--r);padding:18px 44px 18px 20px;margin-bottom:20px;box-shadow:var(--sh-md)}
-    .summary-box p{font-size:14px;line-height:1.7;color:var(--text)}
-    .summary-close{position:absolute;top:10px;right:12px;background:none;border:none;font-size:16px;cursor:pointer;color:var(--text3);line-height:1}
-    .summary-close:hover{color:var(--text)}
 
     @media(max-width:640px){
-      .results-grid,.faq-grid,.inputs-grid,.card-btns{grid-template-columns:1fr}
-      .card{padding:18px}
-      .hdr{padding:28px 18px 22px}
-      .rec{flex-direction:column;gap:8px}
+      .results-grid,.inputs-grid,.card-btns{grid-template-columns:1fr}
+      .card{padding:14px}
+      .hdr{padding:20px 15px 14px}
+      .rec{flex-direction:column;gap:6px}
     }
 
     /* footer */
-    .ftr{background:var(--surface2);border-top:1px solid var(--border);padding:24px 20px;text-align:center;font-size:12px;color:var(--text3);margin-top:32px}
+    .ftr{background:var(--surface2);border-top:1px solid var(--border);padding:16px 15px;text-align:center;font-size:11px;color:var(--text3);margin-top:24px}
     .ftr a{color:var(--primary)}
   </style>
 </head>
@@ -196,15 +144,9 @@
 <header class="hdr">
   <div class="pill">Bilt 2.0 Calculator</div>
   <h1>Housing Rewards vs. Bilt Cash</h1>
-  <p>Official rates from March 11, 2026 Bilt Card Offer Terms. Choose your card, enter your numbers, get the answer.</p>
 </header>
 
 <main class="wrap sec">
-
-  <div class="notice">
-    <strong>Source:</strong> Calculations are based on the official Bilt Rewards Card Offer Terms (last updated March 11, 2026).
-    Rates may change — always verify at <a href="https://biltrewards.com/terms" target="_blank" rel="noopener">biltrewards.com/terms</a>.
-  </div>
 
   <!-- ═══ INPUTS ═══ -->
   <div class="card">
@@ -288,37 +230,6 @@
       </label>
       <span class="pa-maxed-hint">PA bonus excluded from Option 2 when checked</span>
     </div>
-
-    <button class="assump-btn" onclick="toggleAssump()"><span id="arr">▶</span> Show rate assumptions &amp; sources</button>
-    <div class="assump-body" id="assump-body">
-      <table>
-        <thead><tr><th>Parameter</th><th>Value</th><th>Source (March 11, 2026 Offer Terms)</th></tr></thead>
-        <tbody>
-          <tr><td>Housing-only Option: rent multiplier tiers</td><td>0× / 0.5× / 0.75× / 1× / 1.25× (+ 250 pt floor)</td><td>Housing Payment Options section</td></tr>
-          <tr><td>Housing-only Option: tier thresholds</td><td>&lt;25% → 250 pts flat | ≥25% → 0.5× | ≥50% → 0.75× | ≥75% → 1× | ≥100% → 1.25×</td><td>Earning Tiers table</td></tr>
-          <tr><td>Flexible Bilt Cash: earn on everyday spend</td><td>4% Bilt Cash on all Everyday Spend</td><td>4% Bilt Cash section</td></tr>
-          <tr><td>Flexible Bilt Cash: BC → rent points</td><td>$3 Bilt Cash = 100 Bilt Points · max 1× on rent</td><td>Flexible Bilt Cash Option section</td></tr>
-          <tr><td>Bilt Points on everyday spend</td><td><strong>Yes — BOTH options earn Bilt Points on everyday spend</strong></td><td>Choosing Your Rewards Option table</td></tr>
-          <tr><td>Bilt Blue: everyday spend rates</td><td>1× on all other Eligible Purchases</td><td>Bilt Blue Card Earning Structure</td></tr>
-          <tr><td>Bilt Obsidian: everyday spend rates</td><td>3× dining OR grocery (choose one) · 2× travel · 1× other</td><td>Bilt Obsidian Card Earning Structure</td></tr>
-          <tr><td>Bilt Obsidian: grocery 3× cap</td><td>$25,000/year combined grocery spend</td><td>Bilt Obsidian Card Earning Structure</td></tr>
-          <tr><td>Bilt Palladium: everyday spend rates</td><td>2× on ALL other Eligible Purchases (flat)</td><td>Bilt Palladium Card Earning Structure</td></tr>
-          <tr><td>Rent points cap</td><td>No annual or monthly cap (removed in Bilt 2.0)</td><td>Housing-only Option section</td></tr>
-          <tr><td>Point Accelerator cost</td><td>$200 Bilt Cash per activation → +1× on up to $5,000 eligible purchases (5,000 pts max); up to 5×/year; Obsidian &amp; Palladium on Option 2 only</td><td>Bilt Cash Program Terms §3.6</td></tr>
-          <tr><td>Bilt Cash expiration</td><td>Expires end of calendar year (Dec 31); $100 rolls over to next year; FIFO redemption order</td><td>Bilt Cash Program Terms §1.6</td></tr>
-          <tr><td>Bilt Cash redemption methods</td><td>Rent pts ($3=100 pts), Point Accelerator, Lyft/Walgreens/Grubhub ($10/mo each), hotel bookings, tier upgrades — NOT redeemable as direct card statement credit</td><td>Bilt Cash Program Terms §3.1–3.6</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <!-- ═══ SUMMARIZE ═══ -->
-  <div style="text-align:center;margin:8px 0 22px">
-    <button class="summarize-btn" onclick="showSummary()">📋 Summarize my selection</button>
-  </div>
-  <div class="summary-box" id="summary-box" style="display:none">
-    <button class="summary-close" onclick="document.getElementById('summary-box').style.display='none'">✕</button>
-    <p id="summary-txt"></p>
   </div>
 
   <!-- ═══ RESULTS ═══ -->
@@ -372,104 +283,16 @@
 
   </div>
 
-  <!-- RECOMMENDATION -->
-  <div class="rec" id="rec">
-    <div class="rec-ico" id="rec-ico">🏅</div>
-    <div class="rec-body">
-      <h3 id="rec-ttl">Calculating…</h3>
-      <p id="rec-txt"></p>
-      <span class="rec-delta" id="rec-delta"></span>
+  <!-- REFERRAL CTA -->
+  <div class="card" style="text-align:center; padding: 25px; border: 2px solid var(--primary); background: var(--opt1-bg); margin-top: 20px;">
+    <h3 style="margin-bottom: 8px;">Ready to apply for the Bilt Card?</h3>
+    <p style="margin-bottom: 14px; color: var(--text2); font-size: 13px;">Use the link below to apply and start earning rewards on your rent.</p>
+    
+    <div id="referral-bonus" style="margin-bottom: 20px; font-size: 13px; font-weight: 700; color: var(--success); background: rgba(47,133,90,.1); padding: 8px; border-radius: 6px; display: inline-block;">
+      🎁 Limited Time Bonus: Loading...
     </div>
-  </div>
 
-  <!-- COMPARISON BAR -->
-  <div class="cmp-wrap">
-    <div class="cmp-title">Monthly Points Comparison</div>
-    <div class="vs-bar">
-      <div class="vs1" id="vs1"></div>
-      <div class="vs2" id="vs2"></div>
-    </div>
-    <div class="cmp-lbls">
-      <span><span class="dot" style="background:var(--opt1)"></span> Option 1: <strong id="cmp1">—</strong></span>
-      <span><span class="dot" style="background:var(--opt2)"></span> Option 2: <strong id="cmp2">—</strong></span>
-    </div>
-  </div>
-
-  <!-- KEY INSIGHT BOX -->
-  <div class="insight-box">
-    <h3>💡 Key Insight: How the options differ</h3>
-    <p id="insight-txt">Loading…</p>
-  </div>
-
-  <!-- ═══ EDGE CASES ═══ -->
-  <div class="faq-sec">
-    <h2>⚠️ Important Details &amp; Edge Cases</h2>
-    <div class="faq-grid">
-
-      <div class="faq-item ok">
-        <h4>Both options earn Bilt Points on everyday spend</h4>
-        <p>A common misconception: Option 2 does <em>not</em> replace your spend points with Bilt Cash — it <em>adds</em> 4% Bilt Cash on top of your regular card-rate Bilt Points. This makes Option 2 almost always superior for high spenders.</p>
-      </div>
-
-      <div class="faq-item warn">
-        <h4>Bilt Cash → rent points conversion rate</h4>
-        <p>$3 Bilt Cash = 100 Bilt Points on rent (max 1× on rent). Any Bilt Cash beyond what's needed to reach 1× on rent becomes a statement credit or can be saved for later use within the Bilt ecosystem.</p>
-      </div>
-
-      <div class="faq-item ok">
-        <h4>Option 2: you choose how much Bilt Cash to use</h4>
-        <p>You're not forced to convert any Bilt Cash to rent points. You can use any amount — from $0.03 (unlocks 1 point) up to the full 1× on rent — or keep all of it as statement credit for other Bilt ecosystem uses.</p>
-      </div>
-
-      <div class="faq-item warn">
-        <h4>Option 2: no minimum points floor on housing</h4>
-        <p>Option 1 guarantees at least 250 Bilt Points on rent even if you barely use your card. Option 2 has <em>no floor</em> — if you don't redeem any Bilt Cash, you earn 0 points on rent.</p>
-      </div>
-
-      <div class="faq-item">
-        <h4>Switch options monthly (with one billing cycle delay)</h4>
-        <p>You can change your Rewards Option before the last day of any billing cycle — the change takes effect on the first day of the <em>next</em> billing cycle. Plan ahead for big-spend or high-rent months.</p>
-      </div>
-
-      <div class="faq-item warn">
-        <h4>Housing payments must go through the Bilt App or website</h4>
-        <p>Neither option applies if you pay rent outside the Bilt platform. You must also have a valid bank account connected to your Bilt Rewards Account to earn any housing rewards under either option.</p>
-      </div>
-
-      <!-- Obsidian-specific (shown only when Obsidian selected) -->
-      <div class="faq-item" id="faq-obsidian-1" style="display:none">
-        <h4>Bilt Obsidian: choose dining OR grocery (locks for the year)</h4>
-        <p>You get 3× on <em>one</em> category. The selection defaults to Dining and can be changed once within 30 days of your account opening (or of February 7, 2026 for older accounts). After that it locks for the calendar year. The other category earns 1×.</p>
-      </div>
-
-      <div class="faq-item warn" id="faq-obsidian-2" style="display:none">
-        <h4>Bilt Obsidian: $25,000/year grocery cap</h4>
-        <p>If you choose Grocery as your 3× bonus category, the 3× rate applies up to $25,000 in combined grocery spend per calendar year. Anything beyond that earns 1× for the rest of the year.</p>
-      </div>
-
-      <!-- Palladium-specific (shown only when Palladium selected) -->
-      <div class="faq-item" id="faq-palladium" style="display:none">
-        <h4>Bilt Palladium: additional annual benefits not in this calculator</h4>
-        <p>The Palladium card includes $200 Bilt Cash annually (Jan 1 each year), $400 in hotel credits ($200 per half-year via Bilt Travel Portal), and a 50,000-point welcome bonus (with $4,000 spend in 90 days). These are substantial offsets against the $495 fee.</p>
-      </div>
-
-      <!-- Point Accelerator (Obsidian + Palladium only, shown when one of them is selected) -->
-      <div class="faq-item ok" id="faq-pa" style="display:none">
-        <h4>⚡ Point Accelerator — boost your earning (Option 2 only)</h4>
-        <p>Obsidian &amp; Palladium cardholders on <strong>Option 2</strong> can redeem <strong>$200 Bilt Cash</strong> to activate a Point Accelerator: +1× Bilt Point per $1 on eligible purchases (stacks on top of card base rates), up to $5,000 in purchases per activation (= up to 5,000 bonus pts). Activations: up to 5×/year. Rent, housing fees, and tax payments are excluded. Point Accelerator ends immediately if you switch to Option 1.</p>
-      </div>
-
-      <div class="faq-item warn">
-        <h4>Bilt Cash expires at end of calendar year ($100 rolls over)</h4>
-        <p>Bilt Cash earned in a calendar year expires on Dec 31 of that year. Only <strong>$100 of Bilt Cash rolls over</strong> to the following year (used on a first-in, first-out basis). Use your balance before year-end — converting to rent points or activating a Point Accelerator are both valid ways to preserve value.</p>
-      </div>
-
-      <div class="faq-item warn">
-        <h4>Bilt Cash is NOT a statement credit — it stays in the Bilt ecosystem</h4>
-        <p>Bilt Cash cannot be redeemed as a direct card statement credit or withdrawn as cash. It can only be used within the Bilt platform: rent point conversion ($3 = 100 pts), Point Accelerator activations (Obsidian/Palladium), Lyft/Walgreens/Grubhub monthly credits ($10 each), hotel bookings via Bilt Travel Portal, or program tier upgrades.</p>
-      </div>
-
-    </div>
+    <a href="https://www.bilt.com/card?invite=X6PQXK5Q" target="_blank" class="summarize-btn" style="text-decoration:none; display:inline-block;">Apply Now</a>
   </div>
 
 </main>
@@ -477,7 +300,6 @@
 <footer class="ftr">
   <div class="wrap">
     <p><strong>Bilt 2.0 Points Calculator</strong> — Independent tool, not affiliated with or endorsed by Bilt Rewards.<br />
-    Based on Bilt Rewards Card Offer Terms (March 11, 2026) and Bilt Rewards Terms &amp; Conditions (February 13, 2026).<br />
     Always verify at <a href="https://biltrewards.com/terms" target="_blank" rel="noopener">biltrewards.com/terms</a>.</p>
   </div>
 </footer>
@@ -549,11 +371,7 @@ function selectCard(c) {
   document.getElementById('simple-spend-row').style.display = def.single ? '' : 'none';
   document.getElementById('multi-spend-grid').style.display  = def.single ? 'none' : '';
 
-  // show/hide card-specific FAQ items
-  document.getElementById('faq-obsidian-1').style.display = c==='obsidian' ? '' : 'none';
-  document.getElementById('faq-obsidian-2').style.display = c==='obsidian' ? '' : 'none';
-  document.getElementById('faq-palladium').style.display   = c==='palladium' ? '' : 'none';
-  document.getElementById('faq-pa').style.display          = (c==='obsidian'||c==='palladium') ? '' : 'none';
+  // show/hide Point Accelerator checkbox row
   document.getElementById('pa-maxed-row').style.display    = (c==='obsidian'||c==='palladium') ? 'flex' : 'none';
 
   updateCardLabels();
@@ -672,24 +490,11 @@ function render() {
   document.getElementById('spend-ratio').textContent = s.rent ? fmtC(spend / s.rent) : 'N/A';
 
   /* ── Option 1 ── */
-  document.getElementById('o1-pts').textContent = fmt(o1.total);
-  const rates = getCardRates();
+  document.getElementById('o1-pts').textContent = fmt(o1.rentPts);
   const def   = CARD_DEFS[s.card];
-
-  let spendRows = '';
-  if (def.single) {
-    spendRows = `<li><span class="bl">Spend (${rates.other}×) — $${fmt(spend)}</span><span class="bv">${fmtP(o1.spendPts)}</span></li>`;
-  } else {
-    spendRows = `
-      <li><span class="bl">Bonus cat (${rates.cat1}×) — $${fmt(s.cat1)}</span><span class="bv">${fmtP(s.cat1 * rates.cat1)}</span></li>
-      <li><span class="bl">Travel (${rates.travel}×) — $${fmt(s.travel)}</span><span class="bv">${fmtP(s.travel * rates.travel)}</span></li>
-      <li><span class="bl">Other (${rates.other}×) — $${fmt(s.other)}</span><span class="bv">${fmtP(s.other * rates.other)}</span></li>
-    `;
-  }
 
   document.getElementById('o1-brk').innerHTML = `
     <li><span class="bl">🏠 Rent pts (${o1.tier.label})</span><span class="bv">${o1.tier.idx === -1 ? '250 pts flat' : fmtP(o1.rentPts)}</span></li>
-    ${spendRows}
   `;
 
   /* tier bar */
@@ -712,43 +517,31 @@ function render() {
   document.getElementById('tier-nxt').textContent = nxtHint;
 
   /* ── Option 2 ── */
-  document.getElementById('o2-pts').textContent = fmt(o2.effectiveTotal);
-  document.getElementById('o2-pts-lbl').textContent = o2.paBonusPtsAmortized > 0
-    ? 'Effective Bilt Points (incl. PA)'
-    : o2.leftoverBC > 0
-      ? `Bilt Points + ${fmtD(o2.leftoverBC)} Bilt Cash`
-      : 'Total Bilt Points';
-
-  let o2SpendRows = '';
-  if (def.single) {
-    o2SpendRows = `<li><span class="bl">Spend (${rates.other}×) — $${fmt(spend)}</span><span class="bv">${fmtP(o2.spendPts)}</span></li>`;
-  } else {
-    o2SpendRows = `<li><span class="bl">📊 Spend pts (same as Opt 1)</span><span class="bv">${fmtP(o2.spendPts)}</span></li>`;
-  }
+  document.getElementById('o2-pts').textContent = fmt(o2.rentPts);
+  document.getElementById('o2-pts-lbl').textContent = 'Total Rent Points';
 
   const o2PaRow = o2.paBonusPtsAmortized > 0
     ? `<li><span class="bl">⚡ PA bonus (amortized/mo)</span><span class="bv" style="color:var(--opt2);font-weight:700">+${fmt(o2.paBonusPtsAmortized)} pts</span></li>`
     : '';
 
   document.getElementById('o2-brk').innerHTML = `
-    <li><span class="bl">🏠 Rent pts (BC converted at $3→100)</span><span class="bv">${fmtP(o2.rentPts)}</span></li>
-    ${o2SpendRows}
+    <li><span class="bl">🏠 Rent pts (BC converted)</span><span class="bv">${fmtP(o2.rentPts)}</span></li>
     ${o2PaRow}
-    <li><span class="bl">💵 Bilt Cash earned (4% × $${fmt(spend)})</span><span class="bv">${fmtD(o2.biltCash)}</span></li>
+    <li><span class="bl">💵 Bilt Cash earned (4%)</span><span class="bv">${fmtD(o2.biltCash)}</span></li>
     <li><span class="bl">💰 Leftover Bilt Cash</span><span class="bv">${o2.leftoverBC > 0 ? fmtD(o2.leftoverBC) : 'None'}</span></li>
   `;
 
   const bcNoteEl = document.getElementById('o2-note');
   if (o2.leftoverBC > 0) {
     bcNoteEl.className = 'bc-note good';
-    bcNoteEl.textContent = `✅ ${fmtD(o2.leftoverBC)} Bilt Cash remaining after rent conversion — usable within the Bilt ecosystem (Lyft, Walgreens, Grubhub $10/mo each; hotel bookings; Point Accelerator; tier upgrades).`;
+    bcNoteEl.textContent = `✅ ${fmtD(o2.leftoverBC)} Bilt Cash remaining.`;
   } else if (o2.biltCash >= s.rent * BC_TO_PTS_COST) {
     bcNoteEl.className = 'bc-note good';
-    bcNoteEl.textContent = `✅ Enough Bilt Cash to fully unlock 1× on rent (${fmt(s.rent)} pts). No leftover.`;
+    bcNoteEl.textContent = `✅ Enough Bilt Cash to fully unlock 1× on rent.`;
   } else {
     const pctUnlocked = s.rent > 0 ? (o2.rentPts / s.rent * 100).toFixed(0) : 0;
     bcNoteEl.className = 'bc-note warn';
-    bcNoteEl.textContent = `⚠️ Only ${pctUnlocked}% of rent unlocked. Need ${fmtD(s.rent * BC_TO_PTS_COST)} Bilt Cash for full 1×. Currently have ${fmtD(o2.biltCash)}.`;
+    bcNoteEl.textContent = `⚠️ Only ${pctUnlocked}% of rent unlocked.`;
   }
 
   /* ── Point Accelerator box (Obsidian / Palladium only) ── */
@@ -759,18 +552,16 @@ function render() {
     if (o2.paActivations > 0) {
       paDetail.innerHTML =
         `${fmtD(o2.leftoverBC)} leftover BC → activate Point Accelerator ` +
-        `<strong>${o2.paActivations}×</strong> now (${fmt(o2.paBonusPtsMax)} bonus pts on next eligible spend). ` +
-        `<strong>Amortized monthly value: ~${fmt(o2.paBonusPtsAmortized)} pts/mo</strong> — already included in the effective total above.`;
+        `<strong>${o2.paActivations}×</strong> now.`;
     } else {
       paDetail.innerHTML =
-        `${fmtD(o2.leftoverBC)} leftover BC/month accumulates toward a Point Accelerator ($200 = 5,000 bonus pts). ` +
-        `<strong>Amortized: ~${fmt(o2.paBonusPtsAmortized)} pts/mo</strong> — included in effective total above.`;
+        `${fmtD(o2.leftoverBC)} leftover BC/month accumulates toward a Point Accelerator.`;
     }
   } else {
     paBox.style.display = 'none';
   }
 
-  /* ── badges & recommendation ── */
+  /* ── badges ── */
   const diff    = o1.total - o2.effectiveTotal;
   const absDiff = Math.abs(diff);
   const isTie   = absDiff < 10; // within 10 pts = tie
@@ -782,56 +573,13 @@ function render() {
   document.getElementById('card1').classList.toggle('winner', diff > 0 && !isTie);
   document.getElementById('card2').classList.toggle('winner', diff < 0 && !isTie);
 
-  const rec = document.getElementById('rec');
-  if (isTie) {
-    rec.className = 'rec rt';
-    document.getElementById('rec-ico').textContent = '🤝';
-    document.getElementById('rec-ttl').textContent = "It's essentially a tie on points";
-    document.getElementById('rec-txt').textContent = 'Both options earn nearly identical Bilt Points.'
-      + (o2.leftoverBC > 0 ? ` Option 2 also gives you ${fmtD(o2.leftoverBC)} in Bilt Cash — a bonus on top.` : '');
-    document.getElementById('rec-delta').textContent = `Difference < 10 pts/month`;
-  } else if (diff > 0) {
-    rec.className = 'rec r1';
-    document.getElementById('rec-ico').textContent = '🏠';
-    document.getElementById('rec-ttl').textContent = 'Go with Option 1 — Housing-only';
-    document.getElementById('rec-txt').textContent =
-      `The tiered rent multiplier (${o1.tier.label}) is ${fmt(absDiff)} pts ahead of Option 2's effective total`
-      + (o2.paBonusPtsAmortized > 0 ? ` (even after counting ${fmt(o2.paBonusPtsAmortized)} pts/mo from amortized Point Accelerator).` : '.');
-    document.getElementById('rec-delta').textContent = `Option 1 earns ${fmt(absDiff)} more pts/month`;
-  } else {
-    rec.className = 'rec r2';
-    document.getElementById('rec-ico').textContent = '💵';
-    document.getElementById('rec-ttl').textContent = 'Go with Option 2 — Flexible Bilt Cash';
-    document.getElementById('rec-txt').textContent =
-      `Option 2's effective monthly total is ${fmt(absDiff)} pts ahead of Option 1`
-      + (o2.paBonusPtsAmortized > 0
-        ? ` — including ~${fmt(o2.paBonusPtsAmortized)} pts/mo from amortized Point Accelerator activations ($200 BC = 5,000 bonus pts).`
-        : ` (same spend pts + more rent pts via BC conversion${o2.leftoverBC > 0 ? ' + ' + fmtD(o2.leftoverBC) + ' Bilt Cash' : ''}).`);
-    document.getElementById('rec-delta').textContent = `Option 2 earns ${fmt(absDiff)} more pts/month`;
-  }
-
-  /* ── comparison bar (effective totals) ── */
-  const tot = (o1.total + o2.effectiveTotal) || 1;
-  const p1  = Math.round(o1.total / tot * 100);
-  const p2  = 100 - p1;
-  const b1  = document.getElementById('vs1');
-  const b2  = document.getElementById('vs2');
-  b1.style.flex = p1; b1.textContent = p1 > 18 ? 'Opt 1: ' + fmt(o1.total) + ' pts' : '';
-  b2.style.flex = p2; b2.textContent = p2 > 18 ? 'Opt 2: ' + fmt(o2.effectiveTotal) + ' pts' : '';
-  document.getElementById('cmp1').textContent = fmtP(o1.total);
-  document.getElementById('cmp2').textContent = fmtP(o2.effectiveTotal) + (o2.paBonusPtsAmortized > 0 ? ' (incl. PA)' : '');
-
-  /* ── key insight ── */
-  const paLine = o2.paActivations > 0
-    ? ` For ${s.card === 'palladium' ? 'Palladium' : 'Obsidian'} cardholders on Option 2: your ${fmtD(o2.leftoverBC)} leftover Bilt Cash can fund ${o2.paActivations} Point Accelerator activation${o2.paActivations > 1 ? 's' : ''} (+1× on up to $5,000/activation = up to ${fmt(o2.paBonusPtsMax)} bonus pts).`
-    : '';
-  document.getElementById('insight-txt').innerHTML =
-    `<strong>Both options earn the exact same Bilt Points on everyday spend.</strong> ` +
-    `The only difference is how rent is rewarded — plus Option 2 <em>adds</em> ${fmtD(o2.biltCash)}/month in Bilt Cash on top.<br><br>` +
-    `Option 2 converts Bilt Cash to rent points at $3 = 100 pts (max 1× on rent). ` +
-    `Option 1 can reach up to <strong>1.25× on rent</strong> — it wins when the extra rent multiplier bonus exceeds what Option 2's Bilt Cash unlocks. ` +
-    `Note: Bilt Cash is <strong>not</strong> a card statement credit — unused balance stays in your Bilt wallet (expires Dec 31, $100 rolls over).` +
-    paLine;
+  /* ── referral bonus ── */
+  const bonuses = {
+    blue:      '🎁 Referral Bonus: $100 Bilt Cash',
+    obsidian:  '🎁 Referral Bonus: $200 Bilt Cash',
+    palladium: '🎁 Referral Bonus: $300 Bilt Cash + 50,000 Points & Gold Status'
+  };
+  document.getElementById('referral-bonus').textContent = bonuses[s.card];
 }
 
 // ═══════════════════════════════════════════════════════════
@@ -846,51 +594,6 @@ bind('inp-travel', 'travel');
 bind('inp-other',  'other');
 bind('inp-simple', 'simple');
 document.getElementById('chk-pa-maxed').addEventListener('change', e => { S.paMaxed = e.target.checked; render(); });
-
-function showSummary() {
-  const s  = S;
-  const o1 = calcOpt1(s);
-  const o2 = calcOpt2(s);
-  const cardName = { blue: 'Bilt Blue', obsidian: 'Bilt Obsidian', palladium: 'Bilt Palladium' }[s.card];
-  const spend = o1.spend.total;
-  const diff = o1.total - o2.effectiveTotal;
-  const absDiff = Math.abs(diff);
-  const isTie = absDiff < 10;
-
-  let winner, loser, winPts, losePts;
-  if (isTie) {
-    winner = null;
-  } else if (diff > 0) {
-    winner = 'Option 1 (Housing-only)'; winPts = o1.total;
-    loser  = 'Option 2 (Flexible Bilt Cash)'; losePts = o2.effectiveTotal;
-  } else {
-    winner = 'Option 2 (Flexible Bilt Cash)'; winPts = o2.effectiveTotal;
-    loser  = 'Option 1 (Housing-only)'; losePts = o1.total;
-  }
-
-  const tierNote = `Your ${fmtC(spend / (s.rent || 1))} spend-to-rent ratio puts you at ${o1.tier.label} under Option 1, earning ${fmt(o1.rentPts)} pts on rent.`;
-  const o2Note   = `Option 2 earns ${fmtD(o2.biltCash)} Bilt Cash on $${fmt(spend)} spend, converting to ${fmt(o2.rentPts)} rent pts${o2.leftoverBC > 0 ? ` with ${fmtD(o2.leftoverBC)} left over` : ''}.`;
-  const paNote   = o2.paBonusPtsAmortized > 0 ? ` The leftover cash also adds ~${fmt(o2.paBonusPtsAmortized)} pts/mo via Point Accelerator.` : '';
-
-  let line3;
-  if (isTie) {
-    line3 = `Both options earn the same ${fmt(o1.total)} pts/month — pick Option 2 for the extra Bilt Cash flexibility.`;
-  } else {
-    line3 = `✅ ${winner} wins by ${fmt(absDiff)} pts/month (${fmt(winPts)} vs ${fmt(losePts)} effective pts).`;
-  }
-
-  document.getElementById('summary-txt').innerHTML =
-    `<strong>${cardName}</strong> · $${fmt(s.rent)}/mo rent · $${fmt(spend)}/mo spend<br>` +
-    `${tierNote} ${o2Note}${paNote}<br>${line3}`;
-  document.getElementById('summary-box').style.display = '';
-  document.getElementById('summary-box').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-}
-
-function toggleAssump() {
-  const b = document.getElementById('assump-body');
-  const open = b.classList.toggle('open');
-  document.getElementById('arr').textContent = open ? '▼' : '▶';
-}
 
 // ═══════════════════════════════════════════════════════════
 //  BOOT
